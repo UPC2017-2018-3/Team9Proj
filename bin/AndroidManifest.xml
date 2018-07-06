@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhy.tree_view"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/waibiao"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.imooc.systemwork.ApkEntity">
+        <activity
+            android:name="com.example.student.youke_MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.student.youkekecheng_MainActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name="com.zhy.tree_view.ceshi"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name="com.zhy.tree_view.mainActivity"
+            android:label="@string/app_name" >
+        </activity>
+          <activity
+            android:name="com.imooc.systemwork.department_management"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.imooc.systemwork.class_management"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.imooc.systemwork.teacher_management"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.imooc.systemwork.student_management"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.imooc.systemwork.course_management"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teacherpart.teacherpage"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teacherpart.teacher_information"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teacherpart.teacher_setup"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_course"
+            android:label="@string/app_name" >
+        </activity>
+           <activity
+            android:name="teacherpart.teacher_file_course"
+            android:label="@string/app_name" >
+        </activity>
+            <activity
+            android:name="teacherpart.teacher_coursemanagement"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_addcourse"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_student_renwu"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_studentstudy"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_trainingplan"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_trainingsummary"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.SearchDemo"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teacherpart.comprehensive_training"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teacherpart.teacher_combinedtraining"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.addtraining"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_knowledge"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_addknowledge"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teacherpart.addteacher_combinedtraining"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teacherpart.addcomprehensive_training"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.teachingpage"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.teaching_setup"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teacherpart.teacher_file"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_task_management"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_data_analysis"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.add_newtask"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_commun_area"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.real_time_data_statistics"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teachingpart.teaching_carousel_diagram_management"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.teaching_information"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.teaching_words_set"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teachingpart.teaching_comment_supervision"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.review_training_plan"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.review_training_planmain"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teachingpart.teaching_student_zhuwang"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name="livepart.livepage" android:label="@string/app_name" android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:name="livepart.StreamingActivity" android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name="teacherpart.comprehensive_training_course"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teacherpart.teacher_student_zhuwang"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.teacher_renwuxiangqing"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teacherpart.course_data_analysis"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.finished_course"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="teachingpart.student_mark"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.teaching_Supervision"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="teachingpart.teaching_dangan"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.teaching_student_mark"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.student_participation"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="teachingpart.course_effect"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.student.yuanxiaozhuye_Activity"
+            android:label="@string/app_name" >   
+
+        </activity>
+        <activity
+            android:name="com.example.student.yuanxiaoActivity"
+            android:label="@string/app_name" >    
+
+        </activity>
+        
+        <activity
+            android:name="com.example.student.tongzhi_lvActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.student.gonggaoxiangqingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.zixun_lvActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.zixun_student_lvActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.zixun_yuanxiaoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.zixunxiangqingActivity"
+            android:label="@string/app_name" >
+        </activity> 
+        <activity
+            android:name="com.example.student.xueyouquan_lvActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.xiangqing"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.student.xueyouquanxiangqingActivity"
+            android:label="@string/app_name" >
+        </activity>      
+        <activity
+            android:name="com.example.student.loginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.registActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.findpwdActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.setpwdActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.student_MainActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+         <activity
+            android:name="com.example.student.gerenxinxi_Activity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.student.xiaoxi_lvActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.wodekecheng_lvActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.student.wodekecheng_Adapter"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.student.zongheshixun_lvActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.student.zongheshixun_lvActivityAdapter"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.chengji_lvActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.student.chengji_lvActivityAdapter"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.ScreenUtils"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.nengli_lvActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.renwu_lvActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.student.renwu_lvActivityAdapter"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.student.renwuxiangqingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.zhishidian_lvActivity"
+            android:label="@string/app_name" >
+        </activity>       
+        <activity
+            android:name="com.example.student.sousuo"
+            android:label="@string/app_name" >
+        </activity> 
+        <activity
+            android:name="com.example.student.kecheng_MainActivity"
+            android:label="@string/app_name" >            
+        </activity>
+        <activity
+            android:name="com.example.student.kechengjianjie_Fragment1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.kechengzhishidian_Fragment2"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.kechengping_Fragment3"
+            android:label="@string/app_name" >
+        </activity>    
+        
+        <activity
+            android:name="com.example.student.youke_Fragment1"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.youke_Fragment2"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.example.student.allkechengActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.student.youke_Fragment3"
+            android:label="@string/app_name" >
+        </activity> 
+        <activity
+            android:name="com.example.student.student_shixunjihua"
+            android:label="@string/app_name" >
+        </activity>   
+        <activity
+            android:name="com.example.student.zhibolist"
+            android:label="@string/app_name" >
+        </activity>  
+        <activity
+            android:name="com.example.student.submitrenwu"
+            android:label="@string/app_name" >
+        </activity>    
+        <activity android:name="com.example.dati.ResultReportActivity" >
+        </activity>  
+         <activity
+            android:name="com.example.dati.MainActivity"
+            android:label="@string/app_name" >
+        </activity> 
+        <activity
+            android:name="com.example.videopaly.video"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+         <activity
+            android:name="com.example.videopaly.video1"
+            android:configChanges="orientation|keyboardHidden|screenSize" >
+        </activity>
+        <!-- 必须初始化 -->
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />         
+    </application>
+
+</manifest>
