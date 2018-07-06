@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<teacherpart.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_menu1"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:zhy="http://schemas.android.com/apk/res/com.zhy.tree_view"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:scrollbars="none"
+    zhy:rightPadding="100dp" >
+    
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/layout_menu1" />
+    
+
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:background="#e6e6e6"
+    >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="#63c075"
+            android:id="@+id/mine_head" >
+             <Button
+                android:id="@+id/mine_returnbt"
+                android:layout_width="25dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="8dip"
+                android:onClick="toggleMenu"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/zhankailiebiao" />
+
+
+          
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="教师主页"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/teacher_communion"
+                android:layout_width="25dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/xiaoxi" />
+        </LinearLayout>
+        
+    <RelativeLayout
+            android:id="@+id/mine_buju1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_head"
+            android:paddingTop="20dip" 
+            android:background="#63c075"
+            android:gravity="center"
+            android:paddingBottom="20dip"
+            android:layout_centerHorizontal="true"
+            >
+
+            <sharp.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/mine_picture"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/touxiang" 
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/mine_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#ff000000"
+                android:shadowDx="0.0"
+                android:shadowDy="1.0"
+                android:shadowRadius="1.0"
+                android:singleLine="true"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/mine_picture"
+                android:layout_marginLeft="8dip"
+                android:textSize="19sp"
+                android:textStyle="bold"  
+                android:text="username"/>
+
+                <Button 
+                    android:id="@+id/teacher_bianji"
+                    android:layout_width="18sp"
+                    android:layout_height="18sp"
+                    android:layout_toRightOf="@+id/mine_name"
+                    android:layout_marginLeft="8dip"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bianji"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+                android:id="@+id/mine_buju3"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="12dip"
+                android:layout_below="@+id/mine_buju1" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape3">                
+              <TextView
+                    android:id="@+id/teacher_xuexiaoxinxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="学校信息"
+                    android:textColor="#000000"
+                    android:textStyle="bold" 
+                    android:textSize="18sp" />
+              <RelativeLayout 
+         android:id="@+id/teacher_xian1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/teacher_xuexiaoxinxi"
+        >
+        <View  android:layout_height="1px" 
+           android:layout_width="wrap_content"
+           android:background="#e6e6e6"
+        />
+     </RelativeLayout>
+     <TextView
+                    android:id="@+id/teacher_xinxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="学校信息"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/teacher_xian1"
+                    android:textSize="15sp" />
+       
+    </RelativeLayout>
+    
+    <RelativeLayout
+                android:id="@+id/mine_buju4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:layout_below="@+id/mine_buju3" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:background="@drawable/shape3">
+     <TextView
+                    android:id="@+id/kaishizhibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="开启直播"
+                    android:textColor="#000000"
+                    android:textStyle="bold" 
+                    android:textSize="18sp" />
+              <RelativeLayout 
+         android:id="@+id/teacher_xian2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kaishizhibo"
+        >
+        <View  android:layout_height="1px" 
+           android:layout_width="wrap_content"
+           android:background="#e6e6e6"
+        />
+     </RelativeLayout>
+     <RelativeLayout
+            android:id="@+id/mine_buju5"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/teacher_xian2"
+            android:paddingTop="20dip" 
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            >
+        <ImageView 
+             android:id="@+id/image1"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:src="@drawable/qingxidu"/>
+        <TextView 
+             android:id="@+id/tx1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="设置清晰度"
+             android:textSize="15dip"
+             android:layout_centerHorizontal="true"
+             android:layout_toRightOf="@+id/image1"/>
+     </RelativeLayout>
+	
+    <RadioGroup
+        android:id="@+id/radioGroup0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_below="@+id/mine_buju5"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/radio1080p"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="1080P"
+            android:textColor="#666666"
+            android:textColorHighlight="#ff0000"
+            android:textSize="15sp" />
+        <RadioButton
+            android:id="@+id/radio720p"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="720P"
+            android:checked="true"
+            android:layout_marginLeft="6dp"
+            android:textColor="#666666"
+            android:textColorHighlight="#ff0000"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/radio480p"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="480P"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+        <RadioButton
+            android:id="@+id/radio360p"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="360P"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+   </RadioGroup>
+   <RelativeLayout
+            android:id="@+id/mine_buju6"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/radioGroup0"
+            android:paddingTop="20dip" 
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            >
+        <ImageView 
+             android:id="@+id/image2"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:src="@drawable/hengshuping"/>
+        <TextView 
+             android:id="@+id/tx2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="设置屏幕方向"
+             android:textSize="15dip"
+             android:layout_centerHorizontal="true"
+             android:layout_toRightOf="@+id/image2"/>
+     </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mine_buju6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioLandscape"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="横屏"
+            android:textColor="#666666"
+            android:textColorHighlight="#ff0000"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/radioPortrait"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="竖屏"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/radioGroup1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/kaiqizhibo"
+        android:onClick="onClickStart" />
+
+    
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/loading_animation"
+        android:visibility="invisible" />
+     
+     </RelativeLayout>
+    
+   
+    
+
+</RelativeLayout>
+</LinearLayout>
+
+</teacherpart.SlidingMenu>

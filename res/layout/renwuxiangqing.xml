@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#63c075" >
+
+        <Button
+            android:id="@+id/renwuxiangqing_backw"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/backw" />
+
+        <TextView
+            android:id="@+id/text_renwuxiangqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="任务详情"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="AI基础操作入门"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:text="已完成"
+            android:textColor="#2c2c2c" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="开始时间"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:text="2018-1-1"
+            android:textColor="#2c2c2c" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="结束时间"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:text="2018-2-2"
+            android:textColor="#2c2c2c" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="任务类型"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:text="作品提交"
+            android:textColor="#2c2c2c" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re6"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:text="任务概要"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ltv_renwuxianging"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_renwuxiangqing9"
+            android:layout_marginLeft="25dp"
+            android:text="使用课程中讲解的剪辑工具，制作1-5分钟的剪辑片段（可自行选择素材）"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#2c2c2c"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:text="任课教师"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_renwuxiangqing10"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_renwuxiangqing10"
+            android:text="王老师" />
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_renwuxiangqing11"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_renwuxiangqing11"
+            android:text="于" />
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_renwuxiangqing12"
+            android:layout_alignBottom="@+id/tv_renwuxiangqing12"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_renwuxiangqing12"
+            android:text="2018-1-1" />
+
+        <TextView
+            android:id="@+id/tv_renwuxiangqing14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_renwuxiangqing13"
+            android:layout_alignTop="@+id/tv_renwuxiangqing13"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_renwuxiangqing13"
+            android:text="发布" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_renwuxiangqing"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_shape2"
+        android:text="提交" />
+
+</LinearLayout>

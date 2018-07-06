@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MineActivity" 
+    android:background="#e6e6e6"
+    >
+
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="#63c075"
+            android:id="@+id/mine_head" >
+
+
+            <Button
+                android:id="@+id/addcomprehensive_trainingrb"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/fanhui" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="添加试题"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/addtrainingt2"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8dip"
+                 />
+        </LinearLayout>
+        
+     <RelativeLayout
+         android:id="@+id/addtrainingbuju1"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp" 
+        android:layout_below="@+id/mine_head"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+          <TextView
+            android:id="@+id/addtrainingtv1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="题目描述："/>
+          <EditText
+            android:id="@+id/addcomprehensive_trainingt1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/addtrainingtv1"
+            android:background="@drawable/shape1"
+            android:gravity="top"
+            android:ems="10"
+            android:textSize="15sp"
+            android:inputType="textMultiLine" >
+        </EditText>
+       
+       </RelativeLayout>
+       
+       <LinearLayout
+        android:id="@+id/addtrainingbuju2" 
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addtrainingbuju1"
+        android:orientation="horizontal" >
+
+        <CheckedTextView
+            android:id="@+id/addcomprehensive_trainingct1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/option_btn_single_normal"
+            android:textAlignment="center"
+            android:text="A"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/addcomprehensive_traininget1"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:background="@drawable/shape1" 
+             android:textSize="15sp"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/addtrainingbuju3" 
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addtrainingbuju2"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal" >
+
+        <CheckedTextView
+            android:id="@+id/addcomprehensive_trainingct2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/option_btn_single_normal"
+            android:textAlignment="center"
+            android:text="B"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/addcomprehensive_traininget2"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:background="@drawable/shape1" 
+             android:textSize="15sp"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/addtrainingbuju4" 
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addtrainingbuju3"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal" >
+
+        <CheckedTextView
+            android:id="@+id/addcomprehensive_trainingct3"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/option_btn_single_normal"
+            android:textAlignment="center"
+            android:text="C"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/addcomprehensive_traininget3"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:background="@drawable/shape1" 
+             android:textSize="15sp"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/addtrainingbuju5" 
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addtrainingbuju4"
+        android:layout_marginTop="8dip"
+        android:orientation="horizontal" >
+
+        <CheckedTextView
+            android:id="@+id/addcomprehensive_trainingct4"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/option_btn_single_normal"
+            android:textAlignment="center"
+            android:text="D"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/addcomprehensive_traininget4"
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:background="@drawable/shape1" 
+             android:textSize="15sp"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+    <Button 
+        android:id="@+id/addcomprehensive_trainingbt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="提交题目"
+        android:background="@drawable/shape2"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"        
+        />
+        
+     </RelativeLayout>

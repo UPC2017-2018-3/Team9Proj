@@ -1,0 +1,193 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+    <!-- 第二部分，评论区-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp">
+            <!-- 评论区主内容区域-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_line"
+                android:paddingTop="20dp">
+
+                <ListView
+                    android:id="@+id/list_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    ></ListView>
+            </LinearLayout>
+
+            <!-- 标题部分、评论区-->
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:background="#63c075"
+                android:gravity="center_vertical|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/commit_area_01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="评论区"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </FrameLayout>
+        </LinearLayout>
+         <!--第三部分，评论区和输入区-->
+    <LinearLayout
+        android:id="@+id/comment_vg_lyt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/solid_line"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:visibility="visible">
+
+        <!--评论框-->
+        <LinearLayout
+            android:id="@+id/lyt_comment"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/corners_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="评论一下"
+                android:textColor="#A1A1A1"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--第四部分，评论输入区-->
+<commun_part.NoTouchLinearLayout
+    android:id="@+id/edit_vg_lyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77030303"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:visibility="gone">
+    <LinearLayout
+        android:id="@+id/ll_comment_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1F1F1"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+        <!-- 输入框 -->
+        <EditText
+            android:id="@+id/edit_comment"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_bg"
+            android:gravity="left"
+            android:inputType="textMultiLine"
+            android:maxLength="140"
+            android:maxLines="6"
+            android:minHeight="120dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可撰写字"
+                    android:textColor="#848484" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/font_140_03" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="字"
+                    android:textColor="#848484" />
+            </LinearLayout>
+
+
+            <!-- <CheckBox
+                android:id="@+id/checkbox_anonymous"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:checked="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="匿名发布"
+                android:textColor="#848484"
+                android:textSize="15sp" /> -->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/but_comment_send"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_comment"
+                android:text="发表"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </LinearLayout>
+</commun_part.NoTouchLinearLayout>
+
+</FrameLayout>

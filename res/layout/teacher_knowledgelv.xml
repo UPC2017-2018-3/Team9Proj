@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+                   android:id="@+id/system_buju1"
+                   android:layout_width="fill_parent"
+                   android:layout_height="53dp"
+                   android:layout_below="@+id/mine_head"
+                   android:background="#ffffff"
+            >
+       
+            
+            <TextView 
+                   android:id="@+id/teacher_knowledgelvt1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="课程知识点1：基础"
+                   android:layout_marginLeft="15dp"
+                   android:textSize="21sp"
+                   android:layout_centerVertical="true"/>
+            <Button 
+                   android:id="@+id/teacher_knowledgelvb1"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_alignParentRight="true"
+                   android:background="@drawable/shanchu"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="20dp"
+                   />
+            <TextView 
+                   android:id="@+id/teacher_tx1"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/teacher_knowledgelvb1"
+                   android:layout_toRightOf="@+id/teacher_knowledgelvt1"
+                   android:textSize="21sp"
+                   android:layout_centerVertical="true"/>
+
+       
+    </RelativeLayout>
+    <RelativeLayout 
+         android:id="@+id/teacher_xian1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/system_buju1"
+        >
+        <View  android:layout_height="1px" 
+           android:layout_width="wrap_content"
+           android:background="#e6e6e6"
+           android:layout_marginLeft="50dp"
+        />
+     </RelativeLayout>
+    
+
+</LinearLayout>

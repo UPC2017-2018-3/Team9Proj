@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MineActivity" 
+    android:background="#e6e6e6"
+    >
+
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="#63c075"
+            android:id="@+id/mine_head" >
+
+
+            <Button
+                android:id="@+id/student_participationrb"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/fanhui" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="课程参与度统计"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_edit_xxbt"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8dip"
+                 />
+        </LinearLayout>
+        <com.imooc.systemwork.ReFlashListView
+        android:id="@+id/student_participationlv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:layout_below="@+id/mine_head" />
+      
+</RelativeLayout>

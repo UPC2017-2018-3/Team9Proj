@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/tv_xiaoxi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="教师端提醒"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_xiaoxi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_xiaoxi1"
+            android:layout_alignBaseline="@+id/tv_xiaoxi1"
+            android:text="："
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/tv_xiaoxi3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignBaseline="@+id/tv_xiaoxi2"
+            android:layout_toRightOf="@+id/tv_xiaoxi2"
+            android:text="作业已发布"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_xiaoxi"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/tv_xiaoxi3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/delete2" />
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

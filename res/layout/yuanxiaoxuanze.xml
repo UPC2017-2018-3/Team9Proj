@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">"
+    
+<RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#63c075" >
+
+     <Button
+        android:id="@+id/yuanxiao_backw"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/backw" />
+
+     <TextView
+         android:id="@+id/text_yuanxiaoxuanze"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:textColor="#ffffff"
+         android:textSize="20sp"
+         android:text="选择您所在的院校/机构" />       
+
+</RelativeLayout>   
+
+ <!-- <LinearLayout    
+        android:layout_width="match_parent"    
+        android:layout_height="40dp"    
+        android:background="#e6e6e6"  
+        android:gravity="center"    
+        android:orientation="horizontal">  -->
+    
+        <!-- <RelativeLayout    
+            android:layout_width="0dp"    
+            android:layout_height="match_parent"    
+            android:layout_weight="1">    
+    
+            <SearchView
+                android:id="@+id/student_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:iconifiedByDefault="false"
+                android:queryHint="请输入搜索内容"
+                android:textSize="12sp" />
+    
+            <ImageView    
+                android:id="@+id/student_imageview2"    
+                android:layout_width="wrap_content"    
+                android:layout_height="wrap_content"    
+                android:layout_alignParentRight="true"    
+                android:layout_centerInParent="true"    
+                android:paddingRight="20dp"    
+                android:src="@drawable/delete"    
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/student_imageview3"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/student_edittext"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/searchb" />
+
+            <RelativeLayout
+                android:id="@+id/re3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_yuanxiao_confirm"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#e6e6e6"
+                    android:text="OK"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+    
+        </RelativeLayout>    -->
+            
+        
+ <!--    </LinearLayout> -->
+    
+    <ListView    
+        android:id="@+id/yuanxiaoxuanze_listview"    
+        android:layout_width="match_parent"    
+        android:layout_height="wrap_content"    
+        android:layout_weight="1"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+     <Button
+        android:id="@+id/login_backw"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/back" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re1"
+        android:layout_marginTop="10dp" 
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+     <TextView
+         android:id="@+id/iv_logo"
+         android:layout_width="match_parent"
+         android:layout_height="80dp"
+         android:paddingTop="20dp"
+         android:text="欢迎来到云智教育"
+         android:textSize="25sp" />
+            
+    </RelativeLayout>
+    
+   <RelativeLayout
+        android:id="@+id/re3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/re2"
+        android:layout_marginTop="20dp" >
+
+    <ImageView
+        android:id="@+id/image_phone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/edit_login_phone_name"
+        android:src="@drawable/user" />
+
+    <EditText
+        android:id="@+id/edit_login_username"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/image_phone"
+        android:ems="10"
+        android:hint="输入用户名"
+        android:inputType="phone"
+        android:textColor="#c6bdbd"
+        android:textSize="15sp" />
+     
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/re3"
+        android:layout_marginTop="3dp" >
+    
+    <ImageView
+        android:id="@+id/image_password"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/edit_loginpwd"
+        android:src="@drawable/pwd" />
+
+    <EditText
+        android:id="@+id/edit_loginpwd"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/image_password"
+        android:ems="10"
+        android:hint="输入密码"
+        android:inputType="textPassword"
+        android:textColor="#c6bdbd"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>    
+    </RelativeLayout>
+    
+     <RelativeLayout
+         android:id="@+id/re5"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/re4"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:layout_marginTop="8dp" >
+    
+    <ImageView
+        android:id="@+id/image_id"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/radgActButton01"
+        android:src="@drawable/id" />
+     
+     <RadioGroup android:id="@+id/radgActButton01" 
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    	    android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/image_id"
+    		android:orientation="horizontal">
+
+         <RadioButton
+             android:id="@+id/radioButton1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:text="学生" />
+         
+         <RadioButton
+         android:id="@+id/radioButton2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="15dp"
+         android:text="教师" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="教务" />
+
+    </RadioGroup>
+
+     
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/re6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re5" 
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" 
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        
+     <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"           
+            android:text="登录" 
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_shape2"
+            android:layout_alignParentLeft="true"/>   
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/re6">
+
+        <Button
+            android:id="@+id/btn_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_alignBaseline="@+id/img_line"
+            android:layout_toLeftOf="@+id/img_line"
+            android:layout_marginRight="5dp"
+            android:text="立即注册"
+            android:textSize="15sp" />
+        
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="2dp"
+            android:layout_height="15dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/line2"
+            android:paddingTop="15dp" />
+           
+"
+
+        <Button
+            android:id="@+id/btn_forgetpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/img_line"
+            android:layout_toRightOf="@+id/img_line"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:text="忘记密码"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

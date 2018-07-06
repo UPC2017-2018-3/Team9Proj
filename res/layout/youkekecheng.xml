@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#63c075" >
+    
+ <Button
+        android:id="@+id/youkekecheng_backw"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/backw" />
+
+     <TextView
+         android:id="@+id/text_youkekecheng"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:textColor="#ffffff"
+         android:textSize="20sp"
+         android:text="课程详情" />   
+            
+</RelativeLayout>
+
+<RelativeLayout
+        android:id="@+id/re2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+    
+<ImageView
+    android:id="@+id/imageView1_youkekecheng"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/kecheng" 
+    android:scaleType="fitXY"/>
+            
+</RelativeLayout>
+
+<RelativeLayout
+        android:id="@+id/re3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+>
+    
+ <!-- 导航菜单 -->
+   <RadioGroup
+        android:id="@+id/tab_rg_menu_youkekecheng"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tab_rb_1_youkekecheng"
+            style="@style/tab_rb_style"
+            android:checked="true"
+            android:text="简介" 
+            android:textSize="15sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+        <RadioButton
+            android:id="@+id/tab_rb_2_youkekecheng"
+            style="@style/tab_rb_style"
+            android:text="知识点" 
+            android:textSize="15sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+        <RadioButton
+            android:id="@+id/tab_rb_3_youkekecheng"
+            style="@style/tab_rb_style"
+            android:text="评论区"
+             android:textSize="15sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+    </RadioGroup>
+            
+</RelativeLayout>
+<RelativeLayout
+        android:id="@+id/re4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/youkekecheng_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/tab_bg_halo" 
+        android:scaleType="fitXY"/>
+   
+ </RelativeLayout> 
+
+
+ <!--     碎片显示区 -->
+  <FrameLayout 
+        android:id="@+id/realtabcontent_youkekecheng" 
+        android:layout_width="fill_parent" 
+        android:layout_height="80dp" 
+        android:layout_weight="1"  
+         android:background="#e6e6e6"/> 
+
+<!--     碎片主机 -->
+    <android.support.v4.app.FragmentTabHost 
+        android:id="@android:id/tabhost" 
+         android:layout_width="match_parent" 
+       android:layout_height="wrap_content" 
+         android:visibility="gone" > 
+
+        <FrameLayout 
+            android:id="@android:id/tabcontent" 
+             android:layout_width="0dp" 
+             android:layout_height="0dp"
+             android:layout_weight="0" /> 
+        
+    </android.support.v4.app.FragmentTabHost>   
+  
+
+
+<ImageView
+    android:id="@+id/youkekecheng_img2"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:scaleType="fitXY"
+    android:src="@drawable/login2" />
+
+</LinearLayout>

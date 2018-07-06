@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MineActivity" 
+    android:background="#ffffff"
+    >
+
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="#63c075"
+            android:id="@+id/mine_head" >
+
+
+            <Button
+                android:id="@+id/teaching_words_setrb"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/fanhui" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="敏感词设置"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/teacher_addcourset2"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8dip"
+                 />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:id="@+id/buju2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/mine_head" >
+             
+             <TextView 
+                   android:id="@+id/t2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:text="添加敏感词"
+                   android:textSize="19sp"
+                   android:textColor="#000000"/>
+        
+         <RelativeLayout 
+                   android:id="@+id/buju2_tx1"
+                   android:layout_width="fill_parent"
+                   android:layout_height="45dp"
+                   android:layout_below="@+id/t2"
+                   android:background="#ffffff"
+            >
+           <RelativeLayout 
+                   android:id="@+id/student_b1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="35dp"
+                   android:background="#ffffff"
+                   android:layout_marginLeft="20dp"
+                   android:layout_alignParentBottom="true"
+            >
+       
+            <EditText 
+                android:id="@+id/teaching_words_settjet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="输入敏感词"
+                android:textSize="13sp"
+                
+                />
+            
+        </RelativeLayout> 
+        <Button 
+                   android:id="@+id/teaching_words_setbt"
+                   android:layout_width="wrap_content"
+                   android:layout_height="30dp"
+                   android:text="确认添加"
+                   android:textSize="13sp"
+                   android:background="@drawable/shape2"
+                   android:textColor="#ffffff"
+                   android:layout_alignParentRight="true"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="15dp"
+                   />      
+    </RelativeLayout>
+           <RelativeLayout 
+             android:id="@+id/mine_xian2"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:layout_below="@+id/buju2_tx1"
+        >
+        <View 
+            android:layout_height="1px" 
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+           android:layout_width="wrap_content"
+           android:background="#000000" />
+         </RelativeLayout>     
+       </RelativeLayout>
+       <com.imooc.systemwork.ReFlashListView
+        android:id="@+id/teaching_words_setlv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="5dip" 
+        android:layout_below="@+id/buju2" />
+</RelativeLayout>        

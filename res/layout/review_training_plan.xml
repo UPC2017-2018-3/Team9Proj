@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MineActivity" 
+    android:background="#ffffff"
+    >
+
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="#63c075"
+            android:id="@+id/mine_head" >
+
+
+            <Button
+                android:id="@+id/review_training_planrb"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/fanhui" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="发布实训计划"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/teacher_addcourset2"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8dip"
+                 />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="55dip"
+            android:background="#ffffff"
+            android:id="@+id/buju2"
+            android:layout_below="@+id/mine_head" >
+            <ImageView 
+                 android:id="@+id/I2"
+                   android:layout_width="4dip"
+                   android:layout_height="30dip"
+                   android:layout_marginLeft="20dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/tiao"
+                />
+             
+             <TextView 
+                   android:id="@+id/review_t2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/I2"
+                   android:text="目前有15项实训计划待审核"
+                   android:layout_marginLeft="10dp"
+                   android:textSize="19sp"
+                   android:layout_centerVertical="true"
+                   android:textColor="#000000"/>
+     
+       </RelativeLayout>
+         <RelativeLayout 
+             android:id="@+id/mine_xian2"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/buju2"
+        >
+        <View 
+            android:layout_height="5px" 
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+           android:layout_width="wrap_content"
+           android:background="#e6e6e6" />
+         </RelativeLayout> 
+       <com.imooc.systemwork.ReFlashListView
+        android:id="@+id/review_training_planlv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="5dip" 
+        android:layout_below="@+id/mine_xian2" />
+</RelativeLayout>        

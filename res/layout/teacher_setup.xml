@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MineActivity" 
+    android:background="#f7f7f7"
+    >
+
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="#63c075"
+            android:id="@+id/user_edit_head" >
+
+
+            <Button
+                android:id="@+id/teacher_setupfh"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/fanhui" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="设置"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/user_edit_xxbt"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8dip"
+                 />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/user_edit_buju1"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/user_edit_head"
+            android:background="#63c075"
+            android:paddingLeft="20dp"
+            >
+
+            <sharp.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/teacher_setup_picture"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/touxiang" 
+                android:layout_centerVertical="true"
+                />
+           
+            <TextView
+                android:id="@+id/teacher_setup_picbt"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/teacher_setup_picture"
+                android:text="更换头像"
+                android:textColor="#ffffff"
+                android:background="#63c075"
+                android:textSize="20dp" 
+                android:layout_marginLeft="8dip"/>
+            
+            </RelativeLayout>
+            <RelativeLayout 
+                   android:id="@+id/user_edit_buju2"
+                   android:layout_width="fill_parent"
+                   android:layout_height="60dp"
+                   android:layout_below="@+id/user_edit_buju1"
+                   android:background="#ffffff"
+            >
+            <ImageView 
+                android:id="@+id/teacher_setup_tubiao2"
+                   android:layout_width="25sp"
+                   android:layout_height="25sp"
+                   android:src="@drawable/xiugainiming"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="10dip"
+                   />
+       
+            
+            <TextView 
+                   android:id="@+id/teacher_setup_wenben1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="  更换昵称"
+                   android:textSize="21sp"
+                   android:layout_toRightOf="@+id/teacher_setup_tubiao2"
+                   android:layout_centerVertical="true"/>
+            <!-- <Button 
+                   android:id="@+id/teacher_setup_ghbt"
+                   android:layout_width="15dp"
+                   android:layout_height="wrap_content"
+                   android:background="#ffffff"
+                   android:layout_alignParentRight="true"
+                   android:text=">"
+                   />
+ -->            <Button 
+                   android:id="@+id/teacher_setup_ghbt"
+                   android:layout_width="25dp"
+                   android:layout_height="30dp"
+                   android:layout_alignParentRight="true"
+                   android:background="@drawable/jinru"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="20dp"
+                   />
+            <TextView 
+                   android:id="@+id/user_edit_genghuanniming"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/teacher_setup_ghbt"
+                   android:layout_toRightOf="@+id/teacher_setup_wenben1"
+                   android:textSize="21sp"
+                   android:gravity="right"
+                   android:layout_centerVertical="true"/>
+
+       
+    </RelativeLayout>
+     <RelativeLayout 
+                   android:id="@+id/user_edit_buju3"
+                   android:layout_width="fill_parent"
+                   android:layout_height="60dp"
+                   android:layout_below="@+id/user_edit_buju2"
+                   android:layout_marginTop="10dp"
+                   android:background="#ffffff"
+            >
+           
+            <ImageView 
+                android:id="@+id/teacher_setup_tubiao1"
+                   android:layout_width="25sp"
+                   android:layout_height="25sp"
+                   android:src="@drawable/xiugaimima"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="10dip"
+                   />
+            <TextView 
+                   android:id="@+id/teacher_setup_wenben2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="  修改密码"
+                   android:textSize="21sp"
+                   android:layout_toRightOf="@+id/teacher_setup_tubiao1"
+                   android:layout_centerVertical="true"/>
+             
+            <!-- <Button 
+                   android:id="@+id/teacher_setup_bdsjhbt"
+                   android:layout_width="15dp"
+                   android:layout_height="wrap_content"
+                   android:background="#ffffff"
+                   android:layout_alignParentRight="true"
+                   android:text=">"
+                   /> -->
+            <Button 
+                   android:id="@+id/teacher_setup_bdsjhbt"
+                   android:layout_width="25dp"
+                   android:layout_height="30dp"
+                   android:layout_alignParentRight="true"
+                   android:background="@drawable/jinru"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="20dp"
+                   />
+            <TextView 
+                   android:id="@+id/teacher_setup_bangdingshoujihao"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/teacher_setup_bdsjhbt"
+                   android:layout_toRightOf="@+id/teacher_setup_wenben2"
+                   android:textSize="21sp"
+                   android:gravity="right"
+                   android:layout_centerVertical="true"/>
+
+       
+    </RelativeLayout>
+    <Button 
+        android:id="@+id/teacher_setup_zx"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="注销登录"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"        
+        />
+            
+        
+        
+        </RelativeLayout>

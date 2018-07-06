@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_kechengjianjie1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="Adobe系列—Ch基础入门"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+        
+        <TextView
+        android:id="@+id/tv_kechengjianjie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/tv_kechengjianjie1"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="哈佛大学"
+        android:textColor="#3d3d3d"
+        android:textSize="10sp" />
+    
+    
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/re2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+    
+    <ImageView
+    android:id="@+id/img_kechengjian1"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_height="20dp"
+    android:layout_marginLeft="10dp"    
+    android:src="@drawable/line" />
+    
+      <TextView
+            android:id="@+id/tv_kechengjian1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_kechengjian1"
+            android:layout_toRightOf="@+id/img_kechengjian1"
+            android:layout_marginLeft="5dp"
+            android:text="任课教师"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ltv_kechengjian1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_kechengjian1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="张某教授，授课软件工程专业，目前任教于哈佛大学"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="10sp" />
+        
+   <ImageView
+    android:id="@+id/img_kechengjian2"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:layout_below="@+id/ltv_kechengjian1"
+    android:layout_marginLeft="10dp"  
+    android:layout_marginTop="15dp"  
+    android:src="@drawable/line" />
+    
+  <TextView
+            android:id="@+id/tv_kechengjian2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_kechengjian2"
+            android:layout_toRightOf="@+id/img_kechengjian2"
+            android:layout_marginLeft="5dp"
+            android:text="课程简介"
+            android:textSize="15sp" />
+
+     <TextView
+            android:id="@+id/ltv_kechengjian2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_kechengjian2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="5dp"
+            android:lineSpacingMultiplier="1.5"
+            android:text="Character Animator是adobe的一款新应用，可以将Photoshop和Illustrator中的静态图像，通过摄像头和麦克风等辅助设备，与我们的面部表情相连接，让这些静态图像和角色可以随着我们的表情变化而产生相应的表情，真正做到“活”起来。用户可以通过相应软件，改变这个虚拟角色的外观和细节，让角色更具个性。也可以通过相关程序的编写，让这个虚拟角色进行更多的行为和活动表现。"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    
+
+
+
+</LinearLayout>

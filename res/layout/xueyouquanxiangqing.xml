@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#63c075" >
+
+     <Button
+        android:id="@+id/xueyouxiangqing_backw"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/backw" />
+
+     <TextView
+         android:id="@+id/text_xueyouxiangqing"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:textColor="#ffffff"
+         android:textSize="20sp"
+         android:text="学友圈" />  
+      
+</RelativeLayout>
+     
+<RelativeLayout
+        android:id="@+id/re2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="5dp">
+  
+    <TextView
+    android:id="@+id/tv1_xueyouxiangqing"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"    
+    android:text="学长学姐分享干货" 
+    android:textSize="20sp"
+    android:textStyle="bold">
+    </TextView>
+    "
+</RelativeLayout>
+
+<RelativeLayout
+        android:id="@+id/re3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="5dp">
+  
+    <TextView
+    android:id="@+id/tv2_xueyouxiangqing"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"    
+    android:text="2018/3/1" 
+    android:textSize="15sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv3_xueyouxiangqing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tv2_xueyouxiangqing"
+        android:text="作者"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+
+
+<RelativeLayout
+        android:id="@+id/re4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="5dp">
+
+    <TextView
+        android:id="@+id/tv4_xueyouxiangqing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"  
+        android:textSize="15sp"      
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="
+        要树立“无处不可学”的大学学习观。 
+        古人云：“无一事而不学，无一时而不学，无一处而不学，成功之路也。”因而同学们要首先改变头脑中“学习是学校之事，课堂之事”的观念，树立起生活实践中无处不出学的观念。课堂之外，身边的点滴，无处不可学习。例如，见电工修电灯，接插座，这就是需要学的生活知识，可能某天去企业工作，刚好老总办公室电灯坏了，或者需要接个插座，你如果会这些知识，顺手帮老总搞定了。这样必定会让老总刮目相看，可能就因为这件小事你的事业就会得到改变。
+          给自己定下足够高的人生目标。 高尔基说过：”一个人追求的目标越高，他的才能就发展的越快，对社会就越有益。”例如大学生考研，如果把目标定在一流学校一流专业去努力，虽然可能实现不了但结果一定也不会差，但如果一开始就把目标定在二流三流院校专业，结果甚至会更差。
+          同时在设置目标是要注意以下几点：
+           1.目标是清晰可以达到的。
+            2.确立某个目标的优先权，并排出一个序列。
+             3.确定达成较小的学习单元目标。 4.定期对目标重新加以评估，不断自我反省激励。  要科学的管理时间。 时间就是生命，时间就是效率，时间就是资源。要培养自己的学习能力，就必须学会科学的管理时间。时间管理要注意不能 1.不知道自己将要做什么，没有为几个月甚至一年做出计划。 2.即使做出了计划，有了目标，却犹豫不决。" />
+
+</RelativeLayout>
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MineActivity" 
+    android:background="#e6e6e6"
+    >
+
+     <RelativeLayout
+         android:id="@+id/mine_head"
+         android:layout_width="fill_parent"
+         android:layout_height="60dip"
+         android:background="#63c075"
+        >
+
+            <Button
+                android:id="@+id/mine_returnbt"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/fanhui"
+                android:duplicateParentState="true"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="系统管理"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+            </LinearLayout>
+            
+        </RelativeLayout>  
+        <RelativeLayout 
+                   android:id="@+id/system_buju1"
+                   android:layout_width="fill_parent"
+                   android:layout_height="53dp"
+                   android:layout_below="@+id/mine_head"
+                   android:layout_marginTop="18dp"
+                   android:background="#ffffff"
+            >
+       
+            
+            <TextView 
+                   android:id="@+id/system_t1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="  院系管理"
+                   android:textSize="21sp"
+                   android:layout_centerVertical="true"/>
+            <Button 
+                   android:id="@+id/system_b1"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/jinru"
+                   android:layout_alignParentRight="true"
+                   />
+            <TextView 
+                   android:id="@+id/system_tx1"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/user_edit_bdsjhbt"
+                   android:layout_toRightOf="@+id/user_edit_wenben2"
+                   android:textSize="21sp"
+                   android:gravity="right"
+                   android:layout_centerVertical="true"/>
+
+       
+    </RelativeLayout>
+    <RelativeLayout 
+         android:id="@+id/system_xian1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/system_buju1"
+        >
+        <View  android:layout_height="1px" 
+           android:layout_width="wrap_content"
+           android:background="#e6e6e6"
+           android:layout_marginLeft="50dp"
+        />
+     </RelativeLayout>
+    <RelativeLayout 
+                   android:id="@+id/system_buju2"
+                   android:layout_width="fill_parent"
+                   android:layout_height="53dp"
+                   android:layout_below="@+id/system_xian1"
+                   android:background="#ffffff"
+            >
+       
+            
+            <TextView 
+                   android:id="@+id/system_t2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="  班级管理"
+                   android:textSize="21sp"
+                   android:layout_centerVertical="true"/>
+            <Button 
+                   android:id="@+id/system_b2"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/jinru"
+                   android:layout_alignParentRight="true"
+                   />
+            <TextView 
+                   android:id="@+id/system_tx2"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/system_b2"
+                   android:layout_toRightOf="@+id/system_t2"
+                   android:textSize="21sp"
+                   android:gravity="right"
+                   android:layout_centerVertical="true"/>
+
+       
+    </RelativeLayout>
+    <RelativeLayout 
+         android:id="@+id/system_xian2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/system_buju2"
+        >
+        <View  android:layout_height="1px" 
+           android:layout_width="wrap_content"
+           android:background="#e6e6e6"
+           android:layout_marginLeft="50dp"
+        />
+     </RelativeLayout>
+    <RelativeLayout 
+                   android:id="@+id/system_buju3"
+                   android:layout_width="fill_parent"
+                   android:layout_height="53dp"
+                   android:layout_below="@+id/system_xian2"
+                   android:background="#ffffff"
+            >
+       
+            
+            <TextView 
+                   android:id="@+id/system_t3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="  教师管理"
+                   android:textSize="21sp"
+                   android:layout_centerVertical="true"/>
+            <Button 
+                   android:id="@+id/system_b3"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/jinru"
+                   android:layout_alignParentRight="true"
+                   />
+            <TextView 
+                   android:id="@+id/system_tx3"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/system_b3"
+                   android:layout_toRightOf="@+id/system_t3"
+                   android:textSize="21sp"
+                   android:gravity="right"
+                   android:layout_centerVertical="true"/>
+
+       
+    </RelativeLayout>
+    <RelativeLayout 
+         android:id="@+id/system_xian3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/system_buju3"
+        >
+        <View  android:layout_height="1px" 
+           android:layout_width="wrap_content"
+           android:background="#e6e6e6"
+           android:layout_marginLeft="50dp"
+        />
+     </RelativeLayout>
+    <RelativeLayout 
+                   android:id="@+id/system_buju4"
+                   android:layout_width="fill_parent"
+                   android:layout_height="53dp"
+                   android:layout_below="@+id/system_xian3"
+                   android:background="#ffffff"
+            >
+       
+            
+            <TextView 
+                   android:id="@+id/system_t4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="  学生管理"
+                   android:textSize="21sp"
+                   android:layout_centerVertical="true"/>
+            <Button 
+                   android:id="@+id/system_b4"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/jinru"
+                   android:layout_alignParentRight="true"/>
+                   />
+            <TextView 
+                   android:id="@+id/system_tx4"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/system_b4"
+                   android:layout_toRightOf="@+id/system_t4"
+                   android:textSize="21sp"
+                   android:gravity="right"
+                   android:layout_centerVertical="true"/>
+
+       
+    </RelativeLayout>
+    <RelativeLayout 
+         android:id="@+id/system_xian4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/system_buju4"
+        >
+        <View  android:layout_height="1px" 
+           android:layout_width="wrap_content"
+           android:background="#e6e6e6"
+           android:layout_marginLeft="50dp"
+        />
+     </RelativeLayout>
+    <RelativeLayout 
+                   android:id="@+id/system_buju5"
+                   android:layout_width="fill_parent"
+                   android:layout_height="53dp"
+                   android:layout_below="@+id/system_xian4"
+                   android:background="#ffffff"
+            >
+       
+            
+            <TextView 
+                   android:id="@+id/system_t5"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="  课程管理"
+                   android:textSize="21sp"
+                   android:layout_centerVertical="true"/>
+            <Button 
+                   android:id="@+id/system_b5"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_centerVertical="true"
+                   android:background="@drawable/jinru"
+                   android:layout_alignParentRight="true"/>
+            <TextView 
+                   android:id="@+id/system_tx5"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_toLeftOf="@+id/system_b5"
+                   android:layout_toRightOf="@+id/system_t5"
+                   android:textSize="21sp"
+                   android:gravity="right"
+                   android:layout_centerVertical="true"/>
+
+       
+    </RelativeLayout>
+</RelativeLayout>

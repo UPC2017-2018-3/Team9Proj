@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e6e6e6" >
+    
+<RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#63c075" >
+
+     <Button
+        android:id="@+id/cuoti_backw"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/backw" />
+
+     <TextView
+         android:id="@+id/text_cuotihuigu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:textColor="#ffffff"
+         android:textSize="20sp"
+         android:text="错题回顾" />  
+      
+</RelativeLayout>
+
+<LinearLayout android:id="@+id/li1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/re1" >
+     
+  <ListView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cuoti_listview">
+  </ListView>
+  
+</LinearLayout>
+
+</RelativeLayout>
+

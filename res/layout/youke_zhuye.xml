@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    
+    <LinearLayout    
+        android:layout_width="match_parent"    
+        android:layout_height="40dp"    
+        android:background="#63c075"  
+        android:gravity="center"    
+        android:orientation="horizontal">    
+        
+        <Button   
+                android:id="@+id/youke_imageview"    
+                android:layout_width="40dp"    
+                android:layout_height="match_parent" 
+                android:gravity="center"    
+                android:paddingLeft="10dp"    
+                android:paddingRight="10dp"   
+                android:onClick="toggleMenu"
+                android:background="@drawable/list" /> 
+    
+        <RelativeLayout    
+            android:layout_width="0dp"    
+            android:layout_height="match_parent"    
+            android:layout_weight="1">    
+    
+            <EditText    
+                android:id="@+id/youke_edittext"    
+                android:layout_width="match_parent"    
+                android:layout_height="match_parent"    
+                android:layout_marginBottom="8dp"    
+                android:layout_marginTop="8dp"    
+                android:background="@drawable/btn_shape4"    
+                android:hint="请输入搜索内容"    
+                android:maxLength="10"    
+                android:paddingLeft="15dp"    
+                android:singleLine="true"    
+                android:textSize="12sp" />    
+    
+            <ImageView    
+                android:id="@+id/youke_imageview2"    
+                android:layout_width="wrap_content"    
+                android:layout_height="wrap_content"    
+                android:layout_alignParentRight="true"    
+                android:layout_centerInParent="true"    
+                android:paddingRight="20dp"    
+                android:src="@drawable/delete"    
+                android:visibility="gone" />    
+    
+        </RelativeLayout>    
+    
+        <ImageView    
+            android:id="@+id/youke_imageview3"    
+            android:layout_width="40dp"    
+            android:layout_height="match_parent"    
+            android:gravity="center"    
+            android:paddingLeft="10dp"    
+            android:paddingRight="10dp"    
+            android:src="@drawable/search"/>   
+            
+        
+    </LinearLayout>
+    
+    <ListView    
+        android:id="@+id/youke_listview"    
+        android:layout_width="match_parent"    
+        android:layout_height="0dp"    
+        android:layout_weight="1"></ListView>
+   
+    
+
+         
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+
+     
+     
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dip" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/youke_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:layout_marginBottom="3dip"
+                android:orientation="horizontal" >
+
+                <View
+                    android:id="@+id/youke_dot_0"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip" 
+                    android:background="@drawable/dot_focused"/>
+
+                <View
+                    android:id="@+id/youke_dot_1"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip" 
+                    android:background="@drawable/dot_normal"/>
+                <View
+                    android:id="@+id/youke_dot_2"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip" 
+                    android:background="@drawable/dot_normal"/>
+                             
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+<RelativeLayout 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     android:layout_marginBottom="10dp">
+
+     <Button
+         android:id="@+id/youke_recommend_btn"
+         android:layout_width="100dp"
+         android:layout_height="30dp"
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/recommend" />
+
+    
+     <RelativeLayout 
+          android:id="@+id/re1"
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/youke_recommend_btn"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="10dp">
+            
+     <ImageView
+          android:id="@+id/youke_img1"
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/recommend1" />
+
+      <TextView
+          android:id="@+id/youke_tv1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/youke_img1"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="3dp"
+          android:text="Pr入门" />
+        
+     </RelativeLayout>
+
+     <RelativeLayout
+         android:id="@+id/re2"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/re1"
+         android:layout_marginRight="20dp" >
+
+         <ImageView
+             android:id="@+id/youke_img2"
+             android:layout_width="match_parent"
+             android:layout_height="80dp"
+             android:scaleType="fitXY"
+             android:src="@drawable/recommend2"/>
+
+         <TextView
+             android:id="@+id/youke_tv2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/youke_img2"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="3dp"
+             android:text="Ch入门" />
+     </RelativeLayout>
+     
+          <RelativeLayout 
+          android:id="@+id/re3"
+          android:layout_width="120dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/re1"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="10dp">
+            
+     <ImageView
+          android:id="@+id/youke_img3"
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/recommend3" />
+
+      <TextView
+          android:id="@+id/youke_tv3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/youke_img3"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="3dp"
+          android:text="Ps入门" />
+        
+     </RelativeLayout>
+
+     <RelativeLayout
+         android:id="@+id/re4"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/re3"
+         android:layout_marginRight="20dp" >
+
+         <ImageView
+             android:id="@+id/youke_img4"
+             android:layout_width="match_parent"
+             android:layout_height="80dp"
+             android:scaleType="fitXY"
+             android:src="@drawable/recommend4" />
+
+         <TextView
+             android:id="@+id/youke_tv4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/youke_img4"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="3dp"
+             android:text="Ai入门" />
+     </RelativeLayout>
+     
+</RelativeLayout> 
+
+<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:background="#63c075"
+            android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/login_youkezhuye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:text="进入学习前请先选择院校"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+ 
+
+     
+
+  
+ </LinearLayout>    
+
+
+</LinearLayout>
+    

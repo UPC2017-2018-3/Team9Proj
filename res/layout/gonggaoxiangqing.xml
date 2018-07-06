@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+        android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#63c075" >
+
+     <Button
+        android:id="@+id/gonggaoxiangqing_backw"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/backw" />
+
+     <TextView
+         android:id="@+id/text_xiangqing"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:textColor="#ffffff"
+         android:textSize="20sp"
+         android:text="公告详情" />  
+      
+</RelativeLayout>
+     
+<RelativeLayout
+        android:id="@+id/re2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="5dp">
+  
+    <TextView
+    android:id="@+id/tv1_gonggaoxiangqing"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"    
+    android:text="关于公开招聘信控、计通、海洋、新能源等院长的公告" 
+    android:textSize="20sp"
+    android:textStyle="bold">
+    </TextView>
+    "
+</RelativeLayout>
+
+<RelativeLayout
+        android:id="@+id/re3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="5dp">
+  
+    <TextView
+    android:id="@+id/tv2_gonggaoxiangqing"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"    
+    android:text="2018/3/1" 
+    android:textSize="15sp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv3_gonggaoxiangqing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/tv2_gonggaoxiangqing"
+        android:text="作者"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+
+
+<RelativeLayout
+        android:id="@+id/re4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:layout_marginTop="5dp">
+
+    <TextView
+        android:id="@+id/tv4_gonggaoxiangqing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"  
+        android:textSize="15sp"      
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="
+        一、招聘岗位及学科专业要求 　　
+        1.信息与控制工程学院院长：控制科学与工程、信息与通信工程、电气工程等相关学科； 　　
+        2.计算机与通信工程学院院长：计算机科学与技术、软件工程、信息与通信工程等相关学科； 　　
+        3.海洋科学与工程研究院院长：海洋地质与资源、海洋环境与工程、海洋信息技术、海洋装备与防护等相关学科； 　　
+        4.新能源研究院院长：天然气水合物、地热、生物质能、燃料电池及新能源材料等相关学科。    
+         
+         联系人：朱惠平 
+         电话：0532-86983027 
+         传真：0532-86981806 
+         地址：山东省青岛市黄岛区长江西路66号中国石油大学（华东） 
+         邮政编码：266580 
+         电子邮箱：zhp@upc.edu.cn" />
+
+</RelativeLayout>
+</LinearLayout>
+</ScrollView>

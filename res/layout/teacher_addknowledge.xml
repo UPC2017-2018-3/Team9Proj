@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MineActivity" 
+    android:background="#e6e6e6"
+    >
+
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="#63c075"
+            android:id="@+id/mine_head" >
+
+
+            <Button
+                android:id="@+id/teacher_addknowledgerb"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/fanhui" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dip"
+                    android:text="添加课程知识点"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/teacher_coursemanagementtj"
+                android:layout_width="40dip"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="8dip"
+               />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/mine_buju1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_head"
+            android:paddingTop="15dip" 
+            android:gravity="center"
+            >
+        <EditText
+            android:id="@+id/teacher_addknowledgeet1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape1" 
+            />
+
+       </RelativeLayout>
+       <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" 
+        android:layout_below="@+id/mine_buju1"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+       <video.FllScreenVideoView
+        android:id="@+id/videoView"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"/>
+       
+       
+           
+           
+       </RelativeLayout>
+     
+      <RelativeLayout 
+                   android:id="@+id/user_edit_buju3"
+                   android:layout_width="fill_parent"
+                   android:layout_height="60dp"
+                   android:layout_alignParentBottom="true"
+                   android:background="#63c075"
+            >
+            <ImageView 
+                 android:id="@+id/I1"
+                   android:layout_width="3dip"
+                   android:layout_height="45dip"
+                   android:layout_centerInParent="true"
+                   android:background="@drawable/baitiao"
+                />
+           <TextView
+                    android:id="@+id/teacher_addknowledgeet1sc"
+                    android:layout_width="100dip"
+                    android:layout_height="30dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/I1"
+                    android:text="选择视频"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" /> 
+           <TextView
+                    android:id="@+id/teacher_addknowledge2"
+                    android:layout_width="100dip"
+                    android:layout_height="30dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toRightOf="@+id/I1"
+                    android:text="上传视频"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" /> 
+            
+      </RelativeLayout>
+     
+      
+</RelativeLayout>

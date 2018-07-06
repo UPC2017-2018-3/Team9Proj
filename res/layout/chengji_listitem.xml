@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/re1" 
+        android:layout_width="match_parent" 
+        android:layout_height="50dp" 
+        android:background="#ffffff">
+        
+
+        <TextView
+            android:id="@+id/tv_chengjiitem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_chengjiitem2"
+            android:layout_alignBottom="@+id/tv_chengjiitem2"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="25dp"
+            android:textSize="15sp"
+            android:text="AI基础操作入门" />
+
+        <TextView
+            android:id="@+id/tv_chengjiitem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textSize="15sp"
+            android:layout_toLeftOf="@+id/tv_chengjiitem3"
+            android:text="分数:" />
+
+         <TextView
+             android:id="@+id/tv_chengjiitem3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/tv_chengjiitem2"
+             android:layout_alignBottom="@+id/tv_chengjiitem2"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="25dp"
+             android:text="100" />
+
+    </RelativeLayout>
+
+</LinearLayout>

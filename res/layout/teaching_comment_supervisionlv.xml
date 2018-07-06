@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+                   android:id="@+id/system_buju1"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/mine_head"
+                   android:background="#ffffff"
+            > 
+            <sharp.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/teaching_comment_supervision_pic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/touxiang" 
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dip"
+                android:layout_centerVertical="true"
+                />
+            <TextView 
+                   android:id="@+id/teaching_comment_supervision_t1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="学生1"
+                   android:layout_marginTop="10dip"
+                   android:layout_marginLeft="7dp"
+                   android:layout_toRightOf="@+id/teaching_comment_supervision_pic"
+                   android:textSize="21sp"/>
+             <TextView 
+                   android:id="@+id/teaching_comment_supervision_t2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="学生1"
+                   android:layout_marginLeft="7dp"                   
+                   android:layout_below="@+id/teaching_comment_supervision_t1"
+                   android:layout_toRightOf="@+id/teaching_comment_supervision_pic"
+                   android:textSize="21sp"/>
+            <Button 
+                   android:id="@+id/teaching_comment_supervision_b1"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_alignParentRight="true"
+                   android:background="@drawable/shanchu1"
+                   android:layout_centerVertical="true"
+                   android:layout_marginRight="20dp"
+                   />
+           
+       
+    </RelativeLayout>
+     <RelativeLayout 
+             android:id="@+id/mine_xian2"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dip"
+             android:layout_below="@+id/system_buju1"
+        >
+        <View 
+            android:layout_height="1px" 
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+           android:layout_width="wrap_content"
+           android:background="#f7f7f7" />
+         </RelativeLayout>   
+    
+
+</LinearLayout>
